@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.UserFragment">
+
+    <RelativeLayout
+        android:id="@+id/relative_profile"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/xanh_luc"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_profile"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="54dp"
+            android:src="@drawable/avatar"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#C6C1C1"
+            />
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_profile"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="Tên người dùng"
+            ></TextView>
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="Email"
+            android:layout_below="@+id/user_name"
+            ></TextView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/relative_profile"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+        <TextView
+            android:id="@+id/profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:textColor="@color/black"
+            android:text="  Thông tin tài khoản"
+            android:elegantTextHeight="true"
+            android:paddingLeft="21dp"
+            android:drawableLeft="@drawable/ic_twotone_profile"
+            android:layout_marginTop="20dp"
+            ></TextView>
+        <TextView
+            android:id="@+id/donhang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile"
+            android:textSize="24dp"
+            android:textColor="@color/black"
+            android:text="  Thông tin đơn hàng"
+            android:elegantTextHeight="true"
+            android:paddingLeft="21dp"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/ic_local_shipping"
+            ></TextView>
+        <TextView
+            android:id="@+id/dieukhoan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:textColor="@color/black"
+            android:text="  Điều khoản sử dụng"
+            android:elegantTextHeight="true"
+            android:paddingLeft="21dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/donhang"
+            android:drawableLeft="@drawable/ic_rule"
+            ></TextView>
+        <TextView
+            android:id="@+id/gioithieu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:textColor="@color/black"
+            android:text="  Giới thiệu"
+            android:elegantTextHeight="true"
+            android:paddingLeft="21dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/dieukhoan"
+            android:drawableLeft="@drawable/ic_groups"
+            ></TextView>
+        <TextView
+            android:id="@+id/help"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:textColor="@color/black"
+            android:text="  Trung tâm trợ giúp"
+            android:elegantTextHeight="true"
+            android:paddingLeft="21dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/gioithieu"
+            android:drawableLeft="@drawable/ic_help"
+            ></TextView>
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/help"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/button_login"
+            android:text="Đăng xuất"
+            android:id="@+id/logout"
+            android:textSize="20dp"
+            ></Button>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

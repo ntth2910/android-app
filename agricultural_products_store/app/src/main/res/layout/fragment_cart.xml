@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.CartFragment"
+    android:id="@+id/layoutCart"
+    android:background="@color/white"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image_icon"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:src="@drawable/ic_back"
+
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="5dp"
+            ></ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_centerVertical="true"
+            android:text="Giỏ hàng"
+            android:textColor="@color/xanh_luc"
+            android:textSize="27dp"
+            android:textStyle="bold"></TextView>
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="9dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/ic_cart_home"
+            ></ImageView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/info"
+        android:layout_below="@+id/header"
+        android:layout_marginBottom="12dp"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/submitPayment"
+            android:layout_alignParentRight="true"
+            android:text="Thanh toán"
+            ></Button>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="21dp"
+            android:text="Số sản phẩm:"
+            android:textColor="@color/black"
+            android:id="@+id/textNumber"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="12dp"
+            ></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="21dp"
+            android:text="5"
+            android:textColor="@color/black"
+            android:id="@+id/countProduct"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@+id/textNumber"
+            android:layout_marginLeft="12dp"
+            ></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="21dp"
+            android:text="Tổng tiền:"
+            android:textColor="@color/black"
+            android:id="@+id/textTotal"
+            android:layout_below="@+id/textNumber"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="12dp"
+            ></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="21dp"
+            android:text="5"
+            android:textColor="@color/black"
+            android:id="@+id/countPrice"
+            android:layout_below="@+id/countProduct"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@+id/textTotal"
+            android:layout_marginLeft="12dp"
+            ></TextView>
+        <ImageView
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_toRightOf="@+id/countPrice"
+            android:src="@drawable/vnd"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="3dp"
+            android:layout_below="@+id/countProduct"
+            ></ImageView>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="9dp"
+        android:background="@color/xam"
+        android:layout_below="@+id/info"
+        android:id="@+id/viewXam"
+        ></View>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewXam"
+        android:id="@+id/recyclerViewCart"
+        ></androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

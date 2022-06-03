@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.agricultural_products_store">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo2"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Agricultural_products_store">
+
+        <activity android:name=".PaymentActivity" >
+        </activity>
+        <activity android:name=".SearchActivity" >
+        </activity>
+        <activity android:name=".DetailPaymentActivity" >
+        </activity>
+        <activity android:name=".OrderActivity" >
+        </activity>
+        <activity android:name=".profile.ProfileUserActivity">
+        </activity>
+        <activity android:name=".ProfileActivity">
+        </activity>
+        <activity android:name=".LoginActivity" >
+        </activity>
+        <activity android:name=".RegisterActivity">
+        </activity>
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" android:exported="true" />
+    </application>
+
+</manifest>

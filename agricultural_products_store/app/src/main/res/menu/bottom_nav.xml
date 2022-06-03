@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home"
+        android:title="Trang chủ"
+        android:icon="@drawable/ic_home"
+        android:enabled="true"
+        app:cnb_backgroundColor="@color/white"
+        app:cnb_iconColor="@color/xanh_luc"
+        app:cnb_textColor="@color/xanh_luc"
+        app:cnb_iconTintMode="src_in"
+        ></item>
+
+    <item
+        android:id="@+id/category"
+        android:title="Danh mục"
+        android:icon="@drawable/ic_cate"
+        android:enabled="true"
+        app:cnb_backgroundColor="@color/white"
+        app:cnb_iconColor="@color/xanh_luc"
+        app:cnb_textColor="@color/xanh_luc"
+        app:cnb_iconTintMode="src_in"
+        ></item>
+
+    <item
+        android:id="@+id/discount"
+        android:title="Bình luận "
+        android:icon="@drawable/ic_discount"
+        android:enabled="true"
+        app:cnb_backgroundColor="@color/white"
+        app:cnb_iconColor="@color/xanh_luc"
+        app:cnb_textColor="@color/xanh_luc"
+        app:cnb_iconTintMode="src_in"
+        ></item>
+
+    <item
+        android:id="@+id/cart"
+        android:title="Giỏ hàng"
+        android:icon="@drawable/ic_cart"
+        android:enabled="true"
+        app:cnb_backgroundColor="@color/white"
+        app:cnb_iconColor="@color/xanh_luc"
+        app:cnb_textColor="@color/xanh_luc"
+        app:cnb_iconTintMode="src_in"
+        ></item>
+
+    <item
+        android:id="@+id/me"
+        android:title="Tôi"
+        android:icon="@drawable/ic_user"
+        android:enabled="true"
+        app:cnb_backgroundColor="@color/white"
+        app:cnb_iconColor="@color/xanh_luc"
+        app:cnb_textColor="@color/xanh_luc"
+        app:cnb_iconTintMode="src_in"
+        ></item>
+</menu>
